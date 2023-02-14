@@ -1,6 +1,7 @@
 // @flow
 import * as React from "react";
 import ReactGridLayout, { Responsive, WidthProvider } from "react-grid-layout";
+import { MFWrapper } from "./widgets";
 
 const ResponsiveReactGridLayout = WidthProvider(Responsive);
 
@@ -74,7 +75,7 @@ export const DraggableGridLayout = ({ items, editMode }: GridLayoutProps) => {
             {list.map((x, i) => {
                 return (
                     <div key={x.id}>
-                        {list[i].widget}
+                        <MFWrapper children={list[i].widget} />
                     </div>
                 )
             })
