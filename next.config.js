@@ -8,7 +8,7 @@ const nextConfig = {
     const { isServer } = options;
     config.plugins.push(
       new NextFederationPlugin({
-        name: 'dashboard-crash',
+        name: 'dashboardCrash',
         remotes: {
           widget1: `widget1@https://livi-poc-widget1.vercel.app/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
           widget2: `widget2@https://livi-poc-widget2.vercel.app/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
