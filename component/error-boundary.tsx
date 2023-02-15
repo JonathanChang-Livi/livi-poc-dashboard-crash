@@ -27,11 +27,11 @@ class ErrorBoundary extends React.Component {
       // You can render any custom fallback UI
       return (
         <div className="rounded-lg shadow-lg w-full h-full border border-slate-100 bg-white p-4 flex flex-col justify-center items-center">
-          <Title children={'Something went wrong!'} />
+          <Title children={'Something went wrong!'} className="my-3 text-2xl"/>
           <button
             type="button"
             //   onClick={() => this.setState({ hasError: false })}
-            className="bg-secondary p-4 min-w-[100px] rounded-lg flex flex-row justify-between items-center"
+            className="bg-secondary px-4 py-2 min-w-[100px] rounded-lg flex flex-row justify-between items-center"
           >
             <IconReload size={20} />
             <p className="text-primary font-bold">Reload</p>
